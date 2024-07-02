@@ -1,0 +1,50 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block title %}About{% endblock title %}
+{% block banner-slider %}
+<div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{% static 'app/images/banner/b1.jpg'%}" class="d-block w-100" alt="banner-image">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'app/images/banner/b2.jpg'%}" class="d-block w-100" alt="banner-image">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'app/images/banner/b3.jpg'%}" class="d-block w-100" alt="banner-image">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'app/images/banner/b4.jpg'%}" class="d-block w-100" alt="banner-image">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+{% endblock banner-slider %}
+{% block main-content %}
+    <div class="container mt-3">
+        <br>
+        <h2 class="text-center">About Us</h2>
+        <br>
+        <div class="row container">
+            <p class="fs-4 text-center">
+                A company, abbreviated as co., is a legal entity representing an association of legal people, whether natural, juridical or a mixture of both, with a specific objective. Company members share a common purpose and unite to achieve specific, declared goals.
+            </p>
+        </div>
+        <br>
+        <h2 class="text-center">Mission</h2>
+        <br>
+        <div class="row container">
+            <p class="fs-4 text-center">
+                A company mission statement establishes a clear understanding of your company's purpose and what it delivers to customers. A company mission statement is an action-based statement that declares the purpose of an organization and how they serve their customers.
+            </p>
+        </div>
+    </div>
+    <br><br>
+{% endblock main-content %}
